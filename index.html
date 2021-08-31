@@ -4,11 +4,126 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
     <title>Works</title>
   </head>
   <body>
-    <div>Work3: Solve Cave Game by DQN</div>
-    <div>Work2: AI Maze solver</div>
-    <div>Work1: Visualized Astar search</div>
+    <div class="container-fluid">
+      <div class="row">
+        <p class="h5">▼ Featured works:</p>
+        <!--Work3-->
+        <p class="h6">Work3: Solve Cave Game by DQN</p>
+        <p>
+          <a href="https://scikiy.github.io/CaveDQN/" target="_blank"
+            ><img src="img/work3.png" class="img-thumbnail" />
+          </a>
+        </p>
+        <p>
+          DQN solves the game. The DNN plays the game like million times
+          beforehand and learns reasonable weights to output the right action.
+          This is created by only JS, not using any libraries.
+          <span>
+            | Resources:
+            <a href="https://scikiy.github.io/gd_mazesolver/" target="_blank"
+              >demo</a
+            >
+            <a href="https://github.com/scikiy/gd_mazesolver" target="_blank"
+              >code</a
+            >
+            <a href="#" target="_blank">details</a>
+          </span>
+        </p>
+        <!--End of Work3-->
+        <!--Work2-->
+        <p class="h6">Work2: AI Maze Solver</p>
+        <p>
+          <a href="https://scikiy.github.io/gd_mazesolver/" target="_blank"
+            ><img src="img/work2.png" class="img-thumbnail" />
+          </a>
+        </p>
+        <p>
+          Different AI algorithms such as Q-learning and SARSA solve a various
+          size of mazes. This app is created by only JS, not using any
+          libraries.
+          <span>
+            | Resources:
+            <a href="https://scikiy.github.io/gd_mazesolver/" target="_blank"
+              >demo</a
+            >
+            <a href="https://github.com/scikiy/gd_mazesolver" target="_blank"
+              >code</a
+            >
+            <a href="#" target="_blank">details</a>
+          </span>
+        </p>
+        <!--End of Work2-->
+        <!--Work1-->
+        <div>
+          <p class="h6">Work1: Visualized A* Search</p>
+          <p>
+            <a href="https://scikiy.github.io/gd_mazesolver/" target="_blank"
+              ><img src="img/work1.png" class="img-thumbnail" />
+            </a>
+          </p>
+          <p>
+            Different AI algorithms such as Q-learning and SARSA solve a various
+            size of mazes. This app is created by only JS, not using any
+            libraries.
+            <span>
+              | Resources:
+              <a href="https://github.com/scikiy/astar" target="_blank">code</a>
+              <a href="https://youtu.be/syEqM5AjOoI" target="_blank">video</a>
+            </span>
+          </p>
+          <!--End of Work1-->
+        </div>
+        <hr />
+        <div>
+          <!--Other works-->
+          <p class="h5">▼ Other works:</p>
+          <p></p>
+          <!--Other 1-->
+          <p class="h6">・Dog recognition in images (April, 2021)</p>
+          <p>
+            Implemented Adaboost in MATLAB to recoginize a dog in test images
+            without libraries.
+
+            <span>
+              | Resources:
+              <a href="https://github.com/scikiy/adaboost" target="_blank"
+                >code</a
+              >
+            </span>
+          </p>
+          <!--Other 2-->
+          <p class="h6">・Short video recommendation system (December, 2020)</p>
+          <p>
+            Created a DNN Model to recomend short videos to users. The dataset
+            was provided in a competition site. I was responsible for KNN part.
+            <span>
+              | Resources:
+              <a
+                href="https://colab.research.google.com/drive/1bXyN_ih4B_TDMYvaqI3xD_cP_MXTuZVa?usp=sharing"
+                target="_blank"
+                >code</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
