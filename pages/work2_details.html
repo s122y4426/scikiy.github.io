@@ -15,10 +15,96 @@
     <title>Work2 Details</title>
   </head>
   <body>
+    <!--NaviBar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light py-2"
+      style="background-color: #e3f2fd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">My Works</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--End of NaviBar-->
     <div class="container-fluid">
       <div class="row">
-        <p class="h5">▼ Featured works:</p>
-        <!--Work3-->
+        <hr />
+        <div>
+          <p class="h5">Details of Work2</p>
+          <!--Work2-->
+          <div>
+            <!--Overview-->
+            <div>
+              <p class="h6">Overview</p>
+              <p>
+                This is an educational app to understand how AI algorithms work.
+                In this app, you can see the difference between Policy descent,
+                Q-learning, and Sarsa. Policy gradient takes time and learning
+                times the most, whereas Q-learning solves the maze quickest and
+                looks most efficient. As for Sarsa, it takes the longest time at
+                the very beginning of learning and then gets faster.
+              </p>
+            </div>
+            <!--End of Overview-->
+            <!--Algorithm-->
+            <div>
+              <p class="h6">Algorithm</p>
+              <p></p>
+            </div>
+            <!--End of Algorithm-->
+            <!--Insight-->
+            <div>
+              <p class="h6">Insight</p>
+              <p>
+                According to the algorithms mentioned above, Policy gradient
+                updates its weight for each learning, not each step as the rest
+                of the two do, so that it takes a much greater number of
+                learning. Q-learning and Sarsa are almost the same, except the
+                former is off-policy while the latter is on-policy. Q-learning
+                determines Q value, referring the next state and takes the
+                maximum value in the state no matter what the next actual action
+                is. Note that it sometimes takes a random action in case
+                ε-greedy applied. On the other hand, Sarsa determines Q value
+                based on the actual next action, so the timing of updating Q
+                value is in the next state, which is one step further compared
+                with Q-learning.In other words, Q-learning is confident and
+                Sarsa is careful as the Cliff Walking(ref2) shows.
+              </p>
+            </div>
+            <!--End of Insight-->
+            <!--References-->
+            <div>
+              <p class="h6">References</p>
+              <li>1. <a href="https://www.amazon.co.jp/gp/product/4862464505/" target="_blank">AlphaZero 深層学習・強化学習・探索 人工知能プログラミング実践入門</li>
+              <li>2. <a href="https://towardsdatascience.com/reinforcement-learning-cliff-walking-implementation-e40ce98418d4" target="_blank">Reinforcement Learning — Cliff Walking Implementation</li>
+            </div>
+
+            <!--End of References-->
+          </div>
+          <!--End of Description-->
+        </div>
       </div>
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
