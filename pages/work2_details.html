@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- MathJax -->
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -94,8 +101,198 @@
             <!--Algorithm-->
             <div>
               <p class="h6">-Algorithm</p>
-              <p></p>
+              <p>Policy Gradient</p>
+              <!--Policy Gradient 更新式-->
+              <math>
+                <mi>&theta;</mi>
+                <mfenced>
+                  <mi>s</mi>
+                  <mi>a</mi>
+                </mfenced>
+                <mo>←</mo>
+                <mi>&theta;</mi>
+                <mfenced>
+                  <mi>s</mi>
+                  <mi>a</mi>
+                </mfenced>
+                <mo>+</mo>
+                <mi>&eta;</mi>
+                <mo>*</mo>
+                <mfrac>
+                  <mrow>
+                    <mi>N</mi>
+                    <mfenced>
+                      <mi>s</mi>
+                      <mi>a</mi>
+                    </mfenced>
+                    <mo>-</mo>
+                    <mi>P</mi>
+                    <mfenced>
+                      <mi>s</mi>
+                      <mi>a</mi>
+                    </mfenced>
+                    <mo>*</mo>
+                    <mi>N</mi>
+                    <mfenced>
+                      <mi>s</mi>
+                    </mfenced>
+                  </mrow>
+                  <mn>T</mn>
+                </mfrac>
+              </math>
+              <!--End of Policy Gradient 更新式-->
+              <!--Notations-->
+              <div>
+                <p>
+                  θ: value for the action in the state, s:state, a:action,
+                  η:learning rate, N:the number of the action in the state,
+                  P:probability of the action in the state, N(s): the number of
+                  all actions in the state
+                </p>
+              </div>
+              <!--End of Notations-->
+              <p>Q-learning</p>
+              <!--Q-learning 更新式-->
+              <math>
+                <mi>&theta;</mi>
+                <mfenced>
+                  <msub>
+                    <mi>s</mi>
+                    <mi>t</mi>
+                  </msub>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>t</mi>
+                  </msub>
+                </mfenced>
+                <mo>←</mo>
+                <mfenced>
+                  <msub>
+                    <mi>s</mi>
+                    <mi>t</mi>
+                  </msub>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>t</mi>
+                  </msub>
+                </mfenced>
+                <mo>+</mo>
+                <mi>&eta;</mi>
+                <mo>*</mo>
+                <mfenced>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>t+1</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <mi>&gamma;</mi>
+                    <mo>*</mo>
+                    <munder>
+                      <mi>max</mi>
+                      <mrow>
+                        <mi>a</mi>
+                      </mrow>
+                    </munder>
+                    <mi>Q</mi>
+                    <mfenced>
+                      <msub>
+                        <mi>s</mi>
+                        <mi>t+1</mi>
+                      </msub>
+                      <msub>
+                        <mi>a</mi>
+                        <mi>t</mi>
+                      </msub>
+                    </mfenced>
+                    <mo>-</mo>
+                    <mi>Q</mi>
+                    <mfenced>
+                      <msub>
+                        <mi>s</mi>
+                        <mi>t</mi>
+                      </msub>
+                      <msub>
+                        <mi>a</mi>
+                        <mi>t</mi>
+                      </msub>
+                    </mfenced>
+                  </mrow>
+                </mfenced>
+              </math>
+              <!--End of Q-learning 更新式-->
+              <div>
+                <p>
+                  Q:current value, s:state, a:action, η:learning rate, R:reward,
+                  γ:discount factor, maxQ: optimal value in the next state
+                </p>
+              </div>
+              <p>Sarsa</p>
+              <!--Sarsa 更新式-->
+              <math>
+                <mi>&theta;</mi>
+                <mfenced>
+                  <msub>
+                    <mi>s</mi>
+                    <mi>t</mi>
+                  </msub>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>t</mi>
+                  </msub>
+                </mfenced>
+                <mo>←</mo>
+                <mfenced>
+                  <msub>
+                    <mi>s</mi>
+                    <mi>t</mi>
+                  </msub>
+                  <msub>
+                    <mi>a</mi>
+                    <mi>t</mi>
+                  </msub>
+                </mfenced>
+                <mo>+</mo>
+                <mi>&eta;</mi>
+                <mo>*</mo>
+                <mfenced>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>t+1</mi>
+                    </msub>
+                    <mo>+</mo>
+                    <mi>&gamma;</mi>
+                    <mo>*</mo>
+                    <mi>Q</mi>
+                    <mfenced>
+                      <msub>
+                        <mi>s</mi>
+                        <mi>t+1</mi>
+                      </msub>
+                      <msub>
+                        <mi>a</mi>
+                        <mi>t+1</mi>
+                      </msub>
+                    </mfenced>
+                    <mo>-</mo>
+                    <mi>Q</mi>
+                    <mfenced>
+                      <msub>
+                        <mi>s</mi>
+                        <mi>t</mi>
+                      </msub>
+                      <msub>
+                        <mi>a</mi>
+                        <mi>t</mi>
+                      </msub>
+                    </mfenced>
+                  </mrow>
+                </mfenced>
+              </math>
+              <!--End of Sarsa 更新式-->
             </div>
+            <p></p>
             <!--End of Algorithm-->
             <!--Insight-->
             <div>
