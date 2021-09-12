@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Work2 Details</title>
+    <title>Work3 Details</title>
   </head>
   <body>
     <!--NaviBar-->
@@ -52,19 +52,21 @@
       <div class="row">
         <hr />
         <div>
-          <p class="h5">Details of Work2</p>
+          <p class="h5">Details of Work3</p>
+          <p class="text-danger px-2">currently working on improve algorithms to solve the game expectedly. It didn't work, once implementation was finished.</p>
           <!--Work2-->
           <div>
             <!--Overview-->
             <div>
               <p class="h6">-Overview</p>
               <p>
-                This is an educational app to understand how AI algorithms work.
-                In this app, you can see the difference between Policy descent,
-                Q-learning, and Sarsa. Policy gradient takes time and learning
-                times the most, whereas Q-learning solves the maze quickest and
-                looks most efficient. As for Sarsa, it takes the longest time at
-                the very beginning of learning and then gets faster.
+                This game is called Cave. The ship wants to go as deep as
+                possible. When it hits either the above or bottom part of the
+                wall, the game is over. Possible commands are to go up or to do
+                nothing(because the ship is under gravity, it goes down
+                naturally). In general, the command is inputted by a human, but
+                pre-learned DQN deals with the command in this game. The
+                commands are an output of its DQN.
               </p>
             </div>
             <!--End of Overview-->
@@ -72,21 +74,12 @@
             <div>
               <p class="h6">-How to play</p>
               <p>
-                <img src="../img/work2_explanation.png" class="img-thumbnail" />
+                <img src="#" class="img-thumbnail" />
               </p>
               <ol>
-                <li>
-                  Select the number of rows and columns. Most outer aria will be
-                  walls.
-                </li>
-                <li>Click to generate the maze</li>
-                <li>Select an Algorithm</li>
-                <li>Decide how many times it takes to learn</li>
-                <li>Click to run</li>
-                <li>
-                  See the result. If there is no redundant path, which means
-                  success. In failed case, there are redundant paths and it gets
-                  stronger with the color green as it passes the point.
+                <li>Press the train button, which may take a few minutes to learn</li>
+                <li>Press the start button</li>
+                <li>See how it works</li>
                 </li>
               </ol>
             </div>
@@ -100,43 +93,21 @@
             <!--Insight-->
             <div>
               <p class="h6">-Insight</p>
-              <p>
-                According to the algorithms mentioned above, Policy gradient
-                updates its weight for each learning, not each step as the rest
-                of the two do, so that it takes a much greater number of
-                learning. Q-learning and Sarsa are almost the same, except the
-                former is off-policy while the latter is on-policy. Q-learning
-                determines Q value, referring the next state and takes the
-                maximum value in the state no matter what the next actual action
-                is. Note that it sometimes takes a random action in case
-                ε-greedy applied. On the other hand, Sarsa determines Q value
-                based on the actual next action, so the timing of updating Q
-                value is in the next state, which is one step further compared
-                with Q-learning.In other words, Q-learning is confident and
-                Sarsa is careful as the Cliff Walking(Ref.2) shows.
-              </p>
+              <p>currently working on...</p>
             </div>
             <!--End of Insight-->
             <!--References-->
             <div>
               <p class="h6">-References</p>
+              <ol>
               <li>
-                1.
                 <a
-                  href="https://www.amazon.co.jp/gp/product/4862464505/"
+                  href="https://www.amazon.co.jp/dp/B06XRSFM6G/"
                   target="_blank"
-                  >AlphaZero 深層学習・強化学習・探索
-                  人工知能プログラミング実践入門</a
+                  >ゲームを作りながら楽しく学べるHTML5+CSS+JavaScriptプログラミング［改訂版］</a
                 >
               </li>
-              <li>
-                2.
-                <a
-                  href="https://towardsdatascience.com/reinforcement-learning-cliff-walking-implementation-e40ce98418d4"
-                  target="_blank"
-                  >Reinforcement Learning — Cliff Walking Implementation</a
-                >
-              </li>
+              </ol>
             </div>
 
             <!--End of References-->
